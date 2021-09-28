@@ -7,10 +7,11 @@ router.post('/user', (req, res, next) => {
         return;
     }
     res.sendStatus(201);
+
 });
 
 router.get('/user', function(req, res) {
-    res.status(200).json({ firstName: 'john' });
+    res.status(200).json({ firstName: 'john' }).send();
 });
 
 
