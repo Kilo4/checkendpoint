@@ -12,7 +12,9 @@ describe('cards service', ()=> {
                 .get('/cards');
             console.log(res.body);
             expect(res.statusCode).toEqual(200);
-            // expect(res.body) je ako array
+
+            // const card = JSON.parse(res.body);
+            expect(res.body) //je ako array
         });
     })
 
@@ -74,7 +76,7 @@ describe('cards service', ()=> {
 
             console.log(res.body);
             expect(res.statusCode).toEqual(200);
-            expect(res.body.lockStatus).toEqual("tatra");
+            expect(res.body.lockstatus).toEqual("tatra");
         });
     })
 
